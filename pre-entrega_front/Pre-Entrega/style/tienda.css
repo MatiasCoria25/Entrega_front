@@ -1,0 +1,435 @@
+/* ---------- Familias tipograficas ---------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+@font-face {
+    font-family: "oferta";
+    src: url(fonts/starborn/Starborn.ttf);
+}
+
+@font-face {
+    font-family: "descuento";
+    src: url(fonts/cheri/CHERL___.TTF);
+}
+
+@font-face {
+    font-family: "pie";
+    src: url(fonts/simply_olive/Simply\ Olive\ DEMO.ttf);
+}
+
+/* ----------  Reset basico con Selector universal ---------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ---------- Header ---------- */
+
+.barra {
+    width: 100%;
+    height: 80px;
+    background-color: #1861AA;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+.barra img {
+    cursor: pointer;
+}
+
+.barra nav {
+    display: flex;
+    gap: 25px;
+}
+
+.barra nav a {
+    color: whitesmoke;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    text-decoration: none;
+}
+
+/* ---------- Barra de busqueda ---------- */
+
+.busqueda form input {
+     width: 600px;
+    height: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    font-weight: 100;
+    border: 1px solid #1861AA;
+    border-radius: 20px;
+    padding: 5px 10px;
+    outline-color: #1861AA;
+}
+
+/* --------- Iconos esquina ---------- */
+
+.esquina {
+    display: flex;
+    gap: 30px;
+    justify-content: flex-end;
+}
+
+.esquina img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+/* ---------- Main ---------- */
+
+main {
+    background-color: white;
+}
+
+/* ---------- Banner --------- */
+
+.banner{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.banner img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.section-productos {
+    text-align: center;
+}
+
+/* Contenedor */
+.section-productos .productos-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
+}
+
+/* Card individual de producto */
+.section-productos .productos-container .producto {
+    width: 23%;
+    min-width: 250px;
+    margin: 15px 0;
+    padding: 10px 12px;
+    border-radius: 20px;
+    border: 1px solid #cce7d0;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    transition: 0.8s ease;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.section-productos .productos-container .producto img {
+    width: 100%;
+    border-radius: 20px;
+    height: 250px;
+    object-fit: contain;
+    display: block;
+}
+
+/* Descripción dentro de la card */
+.section-productos .productos-container .producto .producto-descripcion {
+    text-align: start;
+    padding: 10px 0;
+    min-height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-grow: 1;
+}
+
+.section-productos .productos-container .producto .producto-descripcion span {
+    color: #606063;
+    font-size: 12px;
+}
+
+.section-productos .productos-container .producto .producto-descripcion h5 {
+    padding-top: 7px;
+    color: #1a1a1a;
+    font-size: 16px;
+}
+
+/* Precio del producto */
+.section-productos .productos-container .producto .producto-descripcion h4 {
+    padding-top: 7px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #088178;
+    margin-top: auto;
+}
+
+/* Efecto hover en la card */
+.section-productos .productos-container .producto:hover {
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Botón agregar al carrito */
+.section-productos .productos-container .producto .carrito {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    padding: 10px 0;
+    margin-top: 12px;
+    border-radius: 8px;
+    background-color: #088178;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    transition: background-color 0.3s ease;
+}
+
+.section-productos .productos-container .producto .carrito:hover {
+    background-color: #066f66;
+}
+
+/* Contenedor fijo en la esquina superior derecha */
+#alert-container {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 2000;
+}
+
+/* Estilo base de la alerta */
+.alert {
+  border-radius: 12px;
+  font-weight: 500;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  animation: slideIn 0.4s ease-out;
+}
+
+/* Colores personalizados */
+.alert-success {
+  background: linear-gradient(135deg, #4caf50, #81c784);
+  color: #fff;
+}
+
+.alert-danger {
+  background: linear-gradient(135deg, #e53935, #ef5350);
+  color: #fff;
+}
+
+.alert-warning {
+  background: linear-gradient(135deg, #fbc02d, #fff176);
+  color: #333;
+}
+
+.alert-info {
+  background: linear-gradient(135deg, #29b6f6, #4fc3f7);
+  color: #fff;
+}
+
+/* Botón de cierre */
+.alert .btn-close {
+  filter: invert(1);
+}
+
+/* Animación de entrada */
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/*---------- Footer ---------- */
+
+.pie-de-pagina {
+    width: 100%;
+    height: 300px;
+    background-color: #1861AA;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Lato", sans-serif;
+}
+
+.pie-de-pagina div img {
+    width: 190px;
+    height: 190px;
+}
+
+.pie-de-pagina div ul li {
+    color: antiquewhite;
+    font-size: 20px;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.pie-de-pagina div a img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+    padding: 5px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.pie-de-pagina div a img:hover {
+    transform: scale(1.2);
+    background-color: #1861AA; 
+}
+
+.pie-de-pagina div h4 {
+    color: antiquewhite;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.pie-de-pagina div p {
+    color: antiquewhite;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+/* ---------- Media Queries ---------- */
+
+/* --- Tablets (768px) --- */
+
+@media (max-width: 768px) {
+
+    /* Header */
+
+    .barra {
+        width: 100%;
+        height: auto;
+        padding: 15px;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 5px;
+    }
+    .busqueda form input {
+       display: none;
+    }
+
+    .esquina {
+        gap: 3px;
+    }
+
+    .esquina img {
+        margin-left: 20px;
+    }
+
+      /* Footer */
+
+    .pie-de-pagina {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        text-align: center;
+    }
+    .pie-de-pagina div {
+        margin: 10px 0;
+    }
+    .pie-de-pagina div p {
+        font-size: 14px;
+    }
+    .pie-de-pagina div ul li {
+        font-size: 18px;
+    }
+}
+
+/* --- Móviles grandes (hasta 600px) --- */
+
+@media (max-width: 600px) {
+
+    /* Header */
+    .barra {
+        width: 100%;
+        height: auto;
+        padding: 15px;
+        flex-wrap: wrap; /* más seguro que nowrap */
+        align-items: center;
+        justify-content: center;
+        font-size: 14px;
+    }
+
+    .barra img {
+        max-width: 100px; /* mantener logo reducido en vez de ocultarlo */
+        height: auto;
+    }
+
+    .busqueda form input {
+       display: none; /* ocultar buscador en móviles */
+    }
+
+    .esquina {
+        gap: 8px; /* mejor separación entre íconos */
+    }
+
+    .esquina img {
+        width: 28px;
+        height: 28px;
+    }
+
+    /* Banner */
+    .banner {
+        width: 100%;
+        margin-top: 15px; /* más compacto */
+    }
+
+    .banner img {
+        width: 100%;
+        max-height: 280px;
+        object-fit: cover;
+    }
+
+    /* Productos */
+    .section-productos .productos-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px; /* espacio entre productos */
+    }
+
+    .section-productos .producto {
+        width: 90%;
+        margin: 10px auto;
+    }
+
+    /* Footer */
+    .pie-de-pagina {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        text-align: center;
+        align-items: center;
+    }
+    .pie-de-pagina div {
+        margin: 10px 0;
+    }
+    .pie-de-pagina div p {
+        font-size: 14px;
+    }
+    .pie-de-pagina div ul li {
+        font-size: 16px;
+    }
+}

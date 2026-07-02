@@ -1,0 +1,369 @@
+/* ----------  Reset basico con Selector universal ---------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ---------- Header ---------- */
+
+.barra {
+    width: 100%;
+    height: 80px;
+    background-color: #1861AA;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.barra img {
+    cursor: pointer;
+}
+
+.barra nav {
+    display: flex;
+    gap: 25px;
+}
+
+.barra nav a {
+    color: whitesmoke;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    text-decoration: none;
+}
+
+/* ---------- Barra de busqueda ---------- */
+
+.busqueda form input {
+    width: 600px;
+    height: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    font-weight: 100;
+    border: 1px solid #1861AA;
+    border-radius: 20px;
+    padding: 5px 10px;
+    outline-color: #1861AA;
+}
+
+/* --------- Iconos esquina ---------- */
+
+.esquina {
+    display: flex;
+    gap: 30px;
+    justify-content: flex-end;
+}
+
+.esquina img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+/* --------- Contenedor ---------- */
+
+.contenedor {
+    width: 80%;
+    margin: 50px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.carrito-contenedor {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 800px;
+    gap: 20px;
+    padding: 40px;
+    align-items: flex-start;
+}
+
+/* --------- Tarjeta productos ---------- */
+
+.card-carrito {
+    flex: 1;
+    background-color: #fff;
+    border: 2px solid #088178; 
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    padding: 20px;
+    display: flex;
+    align-items: flex-start;
+    transition: transform 0.2s ease-in-out;
+}
+
+.card-carrito:hover {
+    transform: scale(1.05);
+    border-color: #1861AA; 
+}
+
+.card-carrito img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.card-carrito .info {
+    flex: 1;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-align: left;
+}
+
+.detalle-precio {
+    display: flex;
+    flex-direction: column; 
+    gap: 10px;
+}
+
+.card-carrito h4 {
+    font-size: 20px;
+    margin: 0;
+}
+
+.card-carrito p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.card-carrito input {
+    width: 70px;
+    text-align: center;
+}
+
+/* -------- Botón eliminar -------- */
+
+.remove-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #ff6f61;   
+    border: none;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 6px 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s; 
+}
+
+.remove-btn:hover {
+    background-color: #e63946;   
+    transform: scale(1.1);
+}
+
+/* --------- Total carrito ---------- */
+
+.carrito-total {
+    width: 300px;
+    height: 250px;
+    margin: 45px auto;
+    background-color: #fff;
+    border: 2px solid #2e7d32;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #2e7d32;
+}
+
+.carrito-total p {
+    color: #222;
+}
+
+.carrito-total input {
+    width: 80%;
+    padding: 10px;
+    margin-top: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* ---------- Footer ---------- */
+
+.pie-de-pagina {
+    width: 100%;
+    height: 300px;
+    background-color: #1861AA;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Lato", sans-serif;
+}
+
+.pie-de-pagina div img {
+    width: 190px;
+    height: 190px;
+}
+
+.pie-de-pagina div ul li {
+    color: antiquewhite;
+    font-size: 20px;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.pie-de-pagina div a img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+    padding: 5px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.pie-de-pagina div a img:hover {
+    transform: scale(1.2);
+    background-color: #1861AA; 
+}
+
+.pie-de-pagina div h4 {
+    color: antiquewhite;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.pie-de-pagina div p {
+    color: antiquewhite;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+/* ---------- Media Queries ---------- */
+
+/* --- Tablets (768px) --- */
+
+@media (max-width: 768px) {
+
+    /* Header */
+    .barra {
+        width: 100%;
+        height: auto;
+        padding: 15px;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 5px;
+    }
+
+    .busqueda form input {
+       display: none;
+    }
+     .esquina {
+        gap: 3px;
+    }
+
+    .esquina img {
+        margin-left: 20px;
+    }
+
+     /* Footer */
+    .pie-de-pagina {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .pie-de-pagina div {
+        margin: 10px 0;
+    }
+
+    .pie-de-pagina div p {
+        font-size: 14px;
+    }
+
+    .pie-de-pagina div ul li {
+        font-size: 18px;
+    }
+}
+
+/* --- Móviles grandes (hasta 600px) --- */
+@media (max-width: 600px) {
+
+    body {
+        font-size: 15px;
+    }
+
+    /* Header */
+    .barra {
+        width: 100%;
+        height: auto;
+        padding: 15px;
+        flex-wrap: wrap; /* permite que los elementos bajen si no entran */
+        align-items: center;
+        justify-content: center;
+    }
+
+    .barra img {
+        max-width: 120px; /* mantiene el logo pero más pequeño */
+        height: auto;
+    }
+
+    .busqueda form input {
+       display: none; /* ocultar buscador en móviles */
+    }
+
+    .esquina {
+        gap: 5px;
+    }
+
+    .esquina img {
+        margin-left: 0; /* mejor usar gap para separación */
+        width: 30px;
+        height: 30px;
+    }
+
+    /* Contenedor */
+    .contenedor {
+        width: 90%;
+        margin: 20px auto;
+        padding: 10px;
+    }
+
+    /* Tarjeta productos */
+    .card-carrito {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    /* Footer */
+    .pie-de-pagina {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        text-align: center;
+        align-items: center;
+    }
+
+    .pie-de-pagina div {
+        margin: 10px 0;
+    }
+
+    .pie-de-pagina div p {
+        font-size: 14px;
+    }
+
+    .pie-de-pagina div ul li {
+        font-size: 16px;
+    }
+}

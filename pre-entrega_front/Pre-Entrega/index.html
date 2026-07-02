@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Meta Data -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Hoja de estilos principal -->
+    <link rel="stylesheet" href="style/style.css">
+     <!-- Bootstrap vía CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="img/icono.ico" type="image/x-icon">
+    <title>Entrega</title>
+</head>
+<body>
+    <!-- --------------------- Header -------------------- -->
+    <header>
+    <!-- ----- Barra de navegacion ----- -->
+        <div class="barra">
+            <a href="/pre-entrega_front/Pre-Entrega/index.html">
+                <img src="/pre-entrega_front/Pre-Entrega/img/icono.png" alt="logo principal">
+            </a>
+            <nav>
+                <a href="/pre-entrega_front/Pre-Entrega/index.html">Inicio</a>
+                <a href="#">Categorias</a>
+                <a href="#">Edades</a>
+                <a href="/pre-entrega_front/Pre-Entrega/pages/tienda.html">Tienda</a>
+                <a href="/pre-entrega_front/Pre-Entrega/pages/contacto.html">Contacto</a>
+            </nav>
+            <div class="busqueda">
+                <form action="">
+                    <input type="text" id="busqueda" name="busqueda" placeholder="Que estas buscando?">
+                </form>
+            </div>
+            <div class="esquina">
+                    <a href="#"><img src="/pre-entrega_front/Pre-Entrega/img/login.png" alt="Iniciar sesion"></a>
+                    <a href="#"><img src="/pre-entrega_front/Pre-Entrega/img/favorito.png" alt="Favoritos"></a>
+                    <a href="/pre-entrega_front/Pre-Entrega/pages/carrito.html">
+                        <img src="/pre-entrega_front/Pre-Entrega/img/carrito.png" alt="Carrito de compras">
+                    </a>
+            </div>
+        </div>
+        <!-- ----- Banners ----- -->
+         <!-- Carrusel -->
+        <div id="promoCarousel" class="carousel slide mt-4" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="/pre-entrega_front/Pre-Entrega/img/banner.png" class="d-block w-100 banner" alt="Banner Principal">
+                </div>
+                <div class="carousel-item">
+                    <img src="/pre-entrega_front/Pre-Entrega/img/descuento_de_juguetes.png" class="d-block w-100 banner" alt="Descuento de juguetes">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#promoCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#promoCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </header>
+
+   <!-- -------------------- Main ---------------------->
+    <main>
+        <section class="oferta">
+            <h1>Ofertas de la semana</h1>
+            <h3>Aprovecha nuestros descuentos especiales en productos seleccionados</h3>
+        </section>
+        <!-- -------------------- Tarjetas ---------------------->
+        <section class="seccion">
+            <div class="tarjeta">
+                <div>
+                    <img src="/pre-entrega_front/Pre-Entrega/img/30.png" alt="30% de descuento">
+                </div>
+                <img src="/pre-entrega_front/Pre-Entrega/img/auto.jpg" alt="Auto de juguete">
+                <h3>Auto a bateria Audi TT 12v con control remoto&#128663;</h3>
+                <h2>&#128178;520</h2>
+                <button class="btn-compra">Comprar</button>
+
+                <a class="carrito"
+                    data-id="local-1"
+                    data-nombre="Auto a bateria Audi TT 12v con control remoto"
+                    data-precio="520"
+                    data-imagen="/pre-entrega_front/Pre-Entrega/img/auto.jpg">
+                    <i class="fa-solid fa-cart-shopping"></i> Agregar al carrito
+                </a>
+            </div>
+            <div class="tarjeta">
+                <div>
+                    <img src="/pre-entrega_front/Pre-Entrega/img/30.png" alt="30% de descuento">
+                </div>
+                <img src="/pre-entrega_front/Pre-Entrega/img/monopatin.webp" alt="Monopatin">
+                <h3>Monopatin plegable negro con rojo&#128756;</h3>
+                <h2>&#128178;330</h2>
+                <button class="btn-compra">Comprar</button>
+
+                <a class="carrito"
+                    data-id="local-2"
+                    data-nombre="Monopatin plegable negro con rojo"
+                    data-precio="330"
+                    data-imagen="/pre-entrega_front/Pre-Entrega/img/monopatin.webp">
+                    <i class="fa-solid fa-cart-shopping"></i> Agregar al carrito
+                </a>
+            </div>
+            <div class="tarjeta">
+                <div>
+                    <img src="/pre-entrega_front/Pre-Entrega/img/30.png" alt="30% de descuento">
+                </div>
+                <img src="/pre-entrega_front/Pre-Entrega/img/bicicleta.avif" alt="Bicicleta para niños">
+                <h3>Bicicleta para niños de 2 a 5 años Gw Super Hero Azul&#128690;</h3>
+                <h2>&#128178;160</h2>
+                <button class="btn-compra">Comprar</button>
+
+                <a class="carrito"
+                    data-id="local-3"
+                    data-nombre="Bicicleta para niños de 2 a 5 años Gw Super Hero Azul"
+                    data-precio="160"
+                    data-imagen="/pre-entrega_front/Pre-Entrega/img/bicicleta.avif">
+                    <i class="fa-solid fa-cart-shopping"></i> Agregar al carrito
+                </a>
+            </div>
+            <div class="tarjeta">
+                <div>
+                    <img src="/pre-entrega_front/Pre-Entrega/img/30.png" alt="30% de descuento">
+                </div>
+                <img src="/pre-entrega_front/Pre-Entrega/img/rollers.jpg" alt="Patines ajustables">
+                <h3>Patines ajustables para niños Roller Derby Talle 2-5&#9976;</h3>
+                <h2>&#128178;120</h2>
+                <button class="btn-compra">Comprar</button>
+
+                <a class="carrito"
+                    data-id="local-4"
+                    data-nombre="Patines ajustables para niños Roller Derby Talle 2-5"
+                    data-precio="120"
+                    data-imagen="/pre-entrega_front/Pre-Entrega/img/rollers.jpg">
+                    <i class="fa-solid fa-cart-shopping"></i> Agregar al carrito
+                </a>
+            </div>
+        </section>
+        <!-- -------------------- BANNER -------------------- -->
+        <section class="seccion">
+            <div class="publicidad">
+                <img src="/pre-entrega_front/Pre-Entrega/img/mario-publicidad.webp" alt="Publicidad de Mario Bros">
+            </div>
+        </section>
+        <!-- -------------------- Muñecos -------------------- -->
+        <section>
+            <div class="seccion-2" >
+                <h1>Llevate tus personajes favoritos!</h1>
+                <div>
+                    <img src="/pre-entrega_front/Pre-Entrega/img/DC.webp" alt="Muñecos de superhéroes de DC">
+                    <p>DC</p>
+                </div>
+                <div>
+                    <img src="/pre-entrega_front/Pre-Entrega/img/dragon-ball.png" alt="Muñecos de personajes de Dragon Ball">
+                    <p>Dragon Ball</p>
+                </div>
+                <div>
+                    <img src="/pre-entrega_front/Pre-Entrega/img/marvel.avif" alt="Muñecos de superhéroes de Marvel">
+                    <p>Marvel</p>
+                </div>
+                <div>
+                    <img src="/pre-entrega_front/Pre-Entrega/img/harry-potter.webp" alt="Muñecos de Harry Potter">
+                    <p>Harry Potter</p>
+                </div>
+                <div>
+                    <img src="/pre-entrega_front/Pre-Entrega/img/sonic.webp" alt="Muñecos de Sonic">
+                    <p>Sonic</p>
+                </div>
+                <div>
+                    <img src="/pre-entrega_front/Pre-Entrega/img/mickey-and-minnie.webp" alt="Muñecos de Mickey y Minnie">
+                    <p>Mickey y Minnie</p>
+                </div>
+                <div>
+                    <img src="/pre-entrega_front/Pre-Entrega/img/barbie.webp" alt="Muñecas de Barbie">
+                    <p>Barbie</p>
+                </div>
+                <div>
+                    <img src="/pre-entrega_front/Pre-Entrega/img/stitch.webp" alt="Muñecos de Stich">
+                    <p>Stich</p>
+                </div>
+                <div>
+                    <img src="/pre-entrega_front/Pre-Entrega/img/peppa-pig.webp" alt="Muñecos de Peppa Pig">
+                    <p>Peppa Pig</p>
+                </div>
+                <div>
+                    <img src="/pre-entrega_front/Pre-Entrega/img/disney-princess.webp" alt="Muñecas de Disney Princesas">
+                    <p>Princesas Disney</p>
+                </div>
+                <div>
+                    <img src="/pre-entrega_front/Pre-Entrega/img/bluey.webp" alt="Muñecos de Bluey">
+                    <p>Bluey</p>
+                </div>
+            </div>
+        </section>
+        <!-- --------------- Banner por categoria --------------- -->
+        <section class="banner-por-categoria">
+            <div>
+                <img src="/pre-entrega_front/Pre-Entrega/img/primera infancia.webp" alt="Primera infancia">
+                <img src="/pre-entrega_front/Pre-Entrega/img/juegos de mesa.webp" alt="Juegos de mesa">
+                <img src="/pre-entrega_front/Pre-Entrega/img/mochilas.webp" alt="Mochilas">
+            </div>
+        </section>
+        <!-- -------------------- Novedades -------------------- -->
+        <section>
+            <div class="novedad">
+                <h1>Novedades</h1>
+                <h3>Descubrí los ultimos lanzamientos y productos más recientes en nuestra tienda
+            </div>
+        </section>
+        <section class="seccion-3">
+            <div class="tarjetas-novedades">
+                <div>
+                     <img src="/pre-entrega_front/Pre-Entrega/img/microfono.webp" alt="Juego educativo microfono graba y canta">
+                </div>
+                <div >
+                    <h6>Fisher Price Juego Educativo Microfono Graba y Canta</h6>
+                    <br>
+                    <h3 class="precio">$700</h3>
+                    <p class="cuotas">3 cuotas sin interes de $23,50</p>
+                    <button>Comprar</button><button>Ver</button>
+
+                    <a class="carrito"
+                        data-id="local-5"
+                        data-nombre="Fisher Price Juego Educativo Microfono Graba y Canta"
+                        data-precio="700"
+                        data-imagen="/pre-entrega_front/Pre-Entrega/img/microfono.webp">
+                    
+                        <i class="fa-solid fa-cart-shopping"></i> Agregar al carrito
+                    </a>
+                </div>
+            </div>
+            <div class="tarjetas-novedades">
+                <div>
+                    <img src="/pre-entrega_front/Pre-Entrega/img/marcadores.webp" alt="Marcadores">
+                </div>
+                <div>
+                    <h6>Marcadores Punta Conica Crayola Gruesos x40 </h6>
+                    <br>
+                    <h3>$730</h3>
+                    <p>3 cuotas sin interes de $24,30</p>
+                    <button>Comprar</button><button>Ver</button>
+
+                    <a class="carrito"
+                        data-id="local-6"
+                        data-nombre="Marcadores Punta Conica Crayola Gruesos x40"
+                        data-precio="730"
+                        data-imagen="/pre-entrega_front/Pre-Entrega/img/marcadores.webp">
+                    
+                        <i class="fa-solid fa-cart-shopping"></i> Agregar al carrito
+                    </a>
+                </div>
+            </div>
+            <div class="tarjetas-novedades">
+                <div>
+                    <img src="/pre-entrega_front/Pre-Entrega/img/rompecabeza.webp" alt="Puzzle Rompecabezas">
+                </div>
+                <div>
+                    <h6>Puzzle Gigante Rompecabeza x 20 Piezas de la Granja de Zenon</h6>
+                    <br>
+                    <h3>$167</h3>
+                    <p>3 cuotas sin interes de $5,56</p>
+                    <button>Comprar</button><button>Ver</button>
+
+                    <a class="carrito"
+                        data-id="local-7"
+                        data-nombre="Puzzle Gigante Rompecabeza x 20 Piezas de la Granja de Zenon"
+                        data-precio="167"
+                        data-imagen="/pre-entrega_front/Pre-Entrega/img/rompecabeza.webp">
+                    
+                        <i class="fa-solid fa-cart-shopping"></i> Agregar al carrito
+                    </a>
+                </div>
+            </div>
+            <div class="tarjetas-novedades">
+                <div>
+                    <img src="/pre-entrega_front/Pre-Entrega/img/hello kitty.webp" alt="Muñeca Hello Kitty">
+                </div>
+                <div>
+                    <h6>Muñeca Hello Kitty And Friends 20cm</h6>
+                    <br>
+                    <h3>$625</h3>
+                    <p>3 cuotas sin interes de $20,83</p>
+                    <button>Comprar</button><button>Ver</button>
+                    <a class="carrito"
+                        data-id="local-8"
+                        data-nombre="Muñeca Hello Kitty And Friends 20cm"
+                        data-precio="625"
+                        data-imagen="/pre-entrega_front/Pre-Entrega/img/hello kitty.webp">
+                    
+                        <i class="fa-solid fa-cart-shopping"></i> Agregar al carrito    
+                    </a>
+                </div>
+            </div>
+            <div class="tarjetas-novedades">
+                <div>
+                    <img src="/pre-entrega_front/Pre-Entrega/img/kuromi.webp" alt="Muñeca Kuromi">
+                </div>
+                <div>
+                    <h6>Muñeca Kuromi And Friends 20cm</h6>
+                    <br>
+                    <h3>$625</h3>
+                    <p>3 cuotas sin interes de $20,83</p>
+                    <button>Comprar</button><button>Ver</button>
+
+                    <a class="carrito"
+                        data-id="local-9"
+                        data-nombre="Muñeca Kuromi And Friends 20cm"
+                        data-precio="625"
+                        data-imagen="/pre-entrega_front/Pre-Entrega/img/kuromi.webp">
+                    
+                        <i class="fa-solid fa-cart-shopping"></i> Agregar al carrito
+                    </a>
+                </div>
+            </div>
+            <div class="tarjetas-novedades">
+                <div>
+                    <img src="/pre-entrega_front/Pre-Entrega/img/conejito luminoso.webp" alt="Conejito luminoso">
+                </div>
+                <div>
+                    <h6>Conejito Luminoso Recoloreable 3 Marcadores Bunny Crayola</h6>
+                    <br>
+                    <h3>$510</h3>
+                    <p>3 cuotas sin interes de $170</p>
+                    <button>Comprar</button><button>Ver</button>
+
+                    <a class="carrito"
+                        data-id="local-10"
+                        data-nombre="Conejito Luminoso Recoloreable 3 Marcadores Bunny Crayola"
+                        data-precio="510"
+                        data-imagen="/pre-entrega_front/Pre-Entrega/img/conejito luminoso.webp">
+                    
+                        <i class="fa-solid fa-cart-shopping"></i> Agregar al carrito
+                    </a>
+                </div>
+            </div>
+            <div class="tarjetas-novedades">
+                <div>
+                    <img src="/pre-entrega_front/Pre-Entrega/img/one piece.webp" alt="Muñeco one Piece">
+                </div>
+                <div>
+                    <h6>One Piece Figura Monkey D.Luffy</h6>
+                    <br>
+                    <h3>$1045</h3>
+                    <p>3 cuotas sin interes de $34,83</p>
+                    <button>Comprar</button><button>Ver</button>
+
+                    <a class="carrito"
+                        data-id="local-11"
+                        data-nombre="One Piece Figura Monkey D.Luffy"
+                        data-precio="1045"
+                        data-imagen="/pre-entrega_front/Pre-Entrega/img/one piece.webp">
+                    
+                        <i class="fa-solid fa-cart-shopping"></i> Agregar al carrito
+                    </a>
+                </div>
+            </div>
+            <div class="tarjetas-novedades">
+                <div>
+                    <img src="/pre-entrega_front/Pre-Entrega/img/auto.webp" alt="Auto Meccano">
+                </div>
+                <div>
+                    <h6>Auto Meccano Metal 25 Modelos 347 Piezas 25 en 1 Set</h6>
+                    <br>
+                    <h3>$1760</h3>
+                    <p>3 cuotas sin interes de $58,66</p>
+                    <button>Comprar</button><button>Ver</button>
+
+                    <a class="carrito"
+                        data-id="local-12"
+                        data-nombre="Auto Meccano Metal 25 Modelos 347 Piezas 25 en 1 Set"
+                        data-precio="1760"
+                        data-imagen="/pre-entrega_front/Pre-Entrega/img/auto.webp">
+                    
+                        <i class="fa-solid fa-cart-shopping"></i> Agregar al carrito
+                    </a>
+                </div>
+            </div>
+            <div class="tarjetas-novedades">
+                <div>
+                    <img src="/pre-entrega_front/Pre-Entrega/img/reloj.webp" alt="Reloj">
+                </div>
+                <div>
+                    <h6>Reloj Infantil My Melody Pulsera Rosa Sanrio</h6>
+                    <br>
+                    <h3>$275</h3>
+                    <p>3 cuotas sin interes de $9,16</p>
+                    <button>Comprar</button><button>Ver</button>
+
+                    <a class="carrito"
+                        data-id="local-13"
+                        data-nombre="Reloj Infantil My Melody Pulsera Rosa Sanrio"
+                        data-precio="275"
+                        data-imagen="/pre-entrega_front/Pre-Entrega/img/reloj.webp">
+                    
+                        <i class="fa-solid fa-cart-shopping"></i> Agregar al carrito
+                    </a>
+                </div>
+            </div>
+            <div class="tarjetas-novedades">
+                <div>
+                    <img src="/pre-entrega_front/Pre-Entrega/img/piano.webp" alt="Piano Bebe Musical">
+                </div>
+                <div>
+                    <h6>Piano Bebe Pataditas Musicales Alfombra De Cuna</h6>
+                    <br>
+                    <h3>$1540</h3>
+                    <p>3 cuotas sin interes de $51,33</p>
+                    <button>Comprar</button><button>Ver</button>
+
+                    <a class="carrito"
+                        data-id="local-14"
+                        data-nombre="Piano Bebe Pataditas Musicales Alfombra De Cuna"
+                        data-precio="1540"
+                        data-imagen="/pre-entrega_front/Pre-Entrega/img/piano.webp">
+                    
+                        <i class="fa-solid fa-cart-shopping"></i> Agregar al carrito
+                    </a>
+                </div>
+            </div>
+            <div class="tarjetas-novedades">
+                <div>
+                    <img src="/pre-entrega_front/Pre-Entrega/img/scuter.webp" alt="Jugute Scooter">
+                </div>
+                <div>
+                    <h6>Juguete Scooter Interactiva De Bluey</h6>
+                    <br>
+                    <h3>$2210</h3>
+                    <p>3 cuotas sin interes de $73,66</p>
+                    <button>Comprar</button><button>Ver</button>
+
+                    <a class="carrito"
+                        data-id="local-15"
+                        data-nombre="Juguete Scooter Interactiva De Bluey"
+                        data-precio="2210"
+                        data-imagen="/pre-entrega_front/Pre-Entrega/img/scuter.webp">
+                    
+                        <i class="fa-solid fa-cart-shopping"></i> Agregar al carrito
+                    </a>
+                </div>
+            </div>
+            <div class="tarjetas-novedades">
+                <div>
+                    <img src="/pre-entrega_front/Pre-Entrega/img/cartuchera.webp" alt="Cartuchera escolar">
+                </div>
+                <div>
+                    <h6>Cartuchera My House Negra</h6>
+                    <br>
+                    <h3>$150</h3>
+                    <p>3 cuotas sin interes de $50</p>
+                    <button>Comprar</button><button>Ver</button>
+
+                    <a class="carrito"
+                        data-id="local-16"
+                        data-nombre="Cartuchera My House Negra"
+                        data-precio="150"
+                        data-imagen="/pre-entrega_front/Pre-Entrega/img/cartuchera.webp">
+                    
+                        <i class="fa-solid fa-cart-shopping"></i> Agregar al carrito
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- ------------------- NEWSLETTER -------------------- -->
+        <section class="newsletter">
+            <div>
+                <h4>Suscribite al Newsletter</h4>
+                <p> Y recibí novedades y <span>descuentos exclusivos</span></p>
+            </div>
+            <div class="form">
+                <input type="email" name="email" placeholder="Email">
+                <button>Suscribirme</button>
+            </div>
+        </section>
+    </main>
+    <!-- -------------------- FOOTER -------------------- -->
+    <footer class="pie-de-pagina" >
+        <div>
+            <img src="/pre-entrega_front/Pre-Entrega/img/logo.png" alt="Logo de la jugueteria">
+        </div>
+        <div>
+            <p>Contacto</p>
+            <p>info@jugueteriafantasia.com.ar</p>
+            <p>1142110386</p>
+            <p>Calle Falsa 123, Planta Baja oficina 2 Recoleta</p>
+            <p>CABA</p> 
+        </div>
+        <div>
+           <ul>
+                <li>Sucursales</li>
+                <li>Promociones, sorteos y legales</li>
+                <li>Preguntas frecuentes</li>
+                <li>Quienes somos</li>
+            </ul> 
+        </div>
+        <div>
+           <h4>Nuestras redes sociales</h4>
+            <a href="https://instagram.com"><img src="/pre-entrega_front/Pre-Entrega/img/instagram.png" alt="Instagram"></a>
+            <a href="https://x.com/home"><img src="/pre-entrega_front/Pre-Entrega/img/twitter.png" alt="Twitter"></a>
+            <a href="https://www.facebook.com/"><img src="/pre-entrega_front/Pre-Entrega/img/facebook.png" alt="Facebook"></a> 
+            <a href="https://www.youtube.com/"><img src="/pre-entrega_front/Pre-Entrega/img/youtube.png" alt="Youtube"></a>   
+        </div>
+        <div class="whatsapp">
+            <a href="https://web.whatsapp.com/"><img src="/pre-entrega_front/Pre-Entrega/img/whatsapp.png" alt="Whatsapp"></a>
+        </div>
+    </footer>
+    <!-- Contenedor de alertas -->
+    <div id="alert-container" class="position-fixed top-0 end-0 p-3" style="z-index: 1050;"></div>
+    <script src="/pre-entrega_front/Pre-Entrega/scripts/index.js"></script>
+    <!-- Script Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

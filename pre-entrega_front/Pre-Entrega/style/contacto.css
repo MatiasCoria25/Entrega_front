@@ -1,0 +1,418 @@
+/* ---------- Familias tipograficas ---------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+@font-face {
+    font-family: "oferta";
+    src: url(fonts/starborn/Starborn.ttf);
+}
+
+@font-face {
+    font-family: "descuento";
+    src: url(fonts/cheri/CHERL___.TTF);
+}
+
+@font-face {
+    font-family: "pie";
+    src: url(fonts/simply_olive/Simply\ Olive\ DEMO.ttf);
+}
+
+/* ----------  Reset basico con Selector universal ---------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ---------- Header ---------- */
+
+.barra {
+    width: 100%;
+    height: 80px;
+    background-color: #1861AA;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+
+.barra img {
+    cursor: pointer;
+}
+
+.barra nav {
+    display: flex;
+    gap: 25px;
+}
+
+.barra nav a {
+    color: whitesmoke;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    text-decoration: none;
+}
+
+/* ---------- Barra de busqueda ---------- */
+
+.busqueda form input {
+     width: 600px;
+    height: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    font-weight: 100;
+    border: 1px solid #1861AA;
+    border-radius: 20px;
+    padding: 5px 10px;
+    outline-color: #1861AA;
+}
+
+/* --------- Iconos esquina ---------- */
+
+.esquina {
+    display: flex;
+    gap: 30px;
+    justify-content: flex-end;
+}
+
+.esquina img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+/* ---------- Main ---------- */
+
+main {
+    background-color: white;
+}
+
+.contacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    margin: 30px;
+    padding: 60px;
+    font-family: "Lato", serif;
+}
+
+.contacto div form {
+    width: 50%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 10px;
+}
+
+.contacto div h2 {
+    font-size: 32px;
+    text-transform: uppercase;
+}
+
+.contacto div p {
+    color: #088178;
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.contacto div form input {
+    width: 500px;
+    padding: 12px 15px;
+    outline: none;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    font-family: "Roboto", serif;
+    font-size: 14px;
+}
+
+.contacto form button {
+    background-color: #1861AA;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.contacto form button:hover {
+    background-color: #088178;
+}
+
+/*---------- Newsletter ---------- */
+
+.newsletter {
+    width: 100%;
+    height: 150px;
+    margin-top: 80px;
+    padding: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    background-color: #088178;
+    font-family: "Lato", Arial, Helvetica, sans-serif;
+}
+
+.newsletter h4 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.newsletter p {
+    font-size: 18px;
+    font-weight: 300;
+    color: #fff
+}
+
+.newsletter p span {
+    color: #222;
+    font-weight: bolder;
+}
+
+.newsletter .form {
+    display: flex;
+    width: 40%;
+}
+
+.newsletter .form input {
+    width: 100%;
+    height: 50px;
+    padding: 0 5px;
+    font-size: 16px;
+    border: 1px solid #088178;
+    border-radius: 20px 0 0 20px;
+    outline-color: #088178;
+}
+
+.newsletter .form button {
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: #fff;
+    background-color: #1861AA;
+    white-space: nowrap;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+/*---------- Footer ---------- */
+
+.pie-de-pagina {
+    width: 100%;
+    height: 300px;
+    background-color: #1861AA;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Lato", sans-serif;
+}
+
+.pie-de-pagina div img {
+    width: 190px;
+    height: 190px;
+}
+
+.pie-de-pagina div ul li {
+    color: antiquewhite;
+    font-size: 20px;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.pie-de-pagina div a img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+    padding: 5px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.pie-de-pagina div a img:hover {
+    transform: scale(1.2);
+    background-color: #1861AA; 
+}
+
+.pie-de-pagina div h4 {
+    color: antiquewhite;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.pie-de-pagina div p {
+    color: antiquewhite;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+/* ---------- Media Queries ---------- */
+
+/* --- Tablets (768px) --- */
+
+@media (max-width: 768px) {
+
+    /* Header */
+
+    .barra {
+        width: 100%;
+        height: auto;
+        padding: 15px;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 5px;
+    }
+    .busqueda form input {
+       display: none;
+    }
+
+    .esquina {
+        gap: 3px;
+    }
+
+    .esquina img {
+        margin-left: 20px;
+    }
+
+    /* Contacto */
+    .contacto {
+        flex-direction: column;
+        gap: 20px;
+        margin: 10px;
+        padding: 20px;
+    }
+
+    /* Newsletter */
+    .newsletter {
+        flex-direction: column;
+        height: auto;
+        text-align: center;
+    }
+    .newsletter form {
+        width: 100%;
+        flex-direction: column;
+        margin-top: 15px;
+    }
+    .newsletter .form input{
+        width: 70%;
+        height: auto;
+    }
+    .newsletter form button {
+        border-radius: 20px;
+        margin: 5px 0;
+        width: auto;
+        padding: 10px 20px;
+    }
+
+    /* Footer */
+    .pie-de-pagina {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        text-align: center;
+    }
+    .pie-de-pagina div {
+        margin: 10px 0;
+    }
+    .pie-de-pagina div p {
+        font-size: 14px;
+    }
+    .pie-de-pagina div ul li {
+        font-size: 18px;
+    }
+}
+
+/* --- Móviles grandes (hasta 600px) --- */
+
+@media (max-width: 600px) {
+
+    body {
+        font-size: 15px;
+    }
+
+    /* Header */
+    .barra {
+        width: 100%;
+        height: auto;
+        padding: 15px;
+        flex-wrap: wrap; /* permite que los elementos bajen si no entran */
+        align-items: center;
+        justify-content: center;
+    }
+
+    .barra img {
+        max-width: 120px; /* mantiene el logo pero más pequeño */
+        height: auto;
+    }
+
+    .busqueda form input {
+       display: none; /* ocultar buscador en móviles */
+    }
+
+    .esquina {
+        gap: 5px;
+    }
+
+    .esquina img {
+        margin-left: 0; /* mejor usar gap para separación */
+        width: 30px;
+        height: 30px;
+    }
+
+     /* Contacto */
+    .contacto {
+        flex-direction: column;
+        gap: 20px;
+        margin: 10px;
+        padding: 20px;
+    }
+
+    .contacto div form {
+        width: 100%;
+        max-width: 100%;
+        margin-right: 0;
+    }
+
+    /* Newsletter */
+    .newsletter form input {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    /* Footer */
+    .pie-de-pagina {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        text-align: center;
+        align-items: center;
+    }
+    .pie-de-pagina div {
+        margin: 10px 0;
+    }
+    .pie-de-pagina div p {
+        font-size: 14px;
+    }
+    .pie-de-pagina div ul li {
+        font-size: 16px;
+    }
+
+}
